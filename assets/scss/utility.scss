@@ -1,0 +1,54 @@
+/* Text Utility */
+.has-text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Style Utility */
+.has-shadow {
+    box-shadow: 0 0 33px 0px rgba(0,0,0,0.15);
+}
+
+/* Responsive Utility */
+.responsiveIframe {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 3px;
+	height: 0;
+}
+.responsiveIframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Flex utility */
+.is-flex {
+	display: flex;
+}
+.is-column {
+	flex-direction: column;
+}
+.is-row {
+	flex-direction: row;
+}
+.is-aligned-center {
+	align-items: center;
+}
+.is-justified-center {
+	justify-content: center;
+}
+
+
+@media(max-width: 768px) {
+	.is-column-touch {
+		flex-direction: column;
+	}
+	.is-row-touch {
+		flex-direction: row;
+	}
+	.is-aligned-center-touch {
+		align-items: center;
+	}
+}

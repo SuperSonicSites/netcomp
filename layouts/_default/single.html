@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{- partial "subheader" . }}
+<section class="section is-small">
+    <div class="container privacypolicy">
+        {{ .Content | safeHTML }}
+    </div>
+</section>
+{{ end }}

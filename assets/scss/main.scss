@@ -1,0 +1,32 @@
+/* Base Settings */
+.container {
+    max-width: 1140px !important;
+}
+
+/* Subheader */
+@media only screen and (max-width: 968px)  {
+.subheader {
+    margin-top: 3.3rem;
+}
+}
+
+/* Found in navigation */
+.nav_logo { 
+    max-width: 140px;
+}
+
+
+/* Found in footer */
+.footer_logo { 
+    width: 200px;
+}
+footer {
+    
+    .nav-link {
+    color: $secondary !important;
+
+    &:hover {
+        color: $primary;
+    }
+}
+}
