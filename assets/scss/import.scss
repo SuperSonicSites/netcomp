@@ -4,11 +4,6 @@ $secondary: #f1f1f1;
 $hero-body-padding-medium: 6rem 1.5rem;
 $section-padding-medium: 6rem 1.5rem;
 
-
-#content {
-    font-family: 'Raleway' !important;
-}
-
 @import '../../node_modules/bulma/bulma';
 
 @import 'utility';
@@ -20,4 +15,3 @@ $section-padding-medium: 6rem 1.5rem;
 @import 'pages/home';
 @import 'partials/nav';
 
-@import 'typography';
