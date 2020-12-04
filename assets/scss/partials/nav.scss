@@ -2,10 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-height: 7.5rem;
+    max-height: 10.5rem;
     min-height: 2rem;
     background-color: white;
 
+  }
+  .navbar-item img {
+    max-height: 3.75rem;
   }
 a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
  color: $primary !important;
@@ -38,7 +41,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     right: 0px;
     z-index: 1;
     width: 55px;
-    height: 47px;
+    height: 55px;
     padding: 1rem;
     background: white;
     display: flex;
@@ -191,6 +194,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
         right:10px;
         bottom:40px;
     }
+    .nav_logo {
+    max-height: 3.5rem !important;
+  }
   }
   @media only screen and (max-width: 1024px)  {
   .nav-link {

@@ -12,7 +12,8 @@
 
 /* Found in navigation */
 .nav_logo { 
-    max-width: 140px;
+    max-width: 250px;
+    height: 100%;
 }
 
 
@@ -29,4 +30,13 @@ footer {
         color: $primary;
     }
 }
+}
+.fill-brand-footer {
+    width: 20px;
+    height: 20px;
+    fill: white;
+
+    &:hover {
+        fill: $primary;
+    }
 }

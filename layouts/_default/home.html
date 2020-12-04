@@ -1,30 +1,187 @@
 {{ define "main" }}
-<header class="hero is-fullheight is-bold is-primary">
+
+<header class="hero is-fullheight">
 
     <div class="hero-body">
-  
+        
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+    
       <div class="container">
-            <div class="is-flex is-column is-aligned-center-touch is-justified-center-touch">
-            <h1 class="title is-size-1 mb-5" data-aos="fade" data-aos-duration="1200">
-              Boilerplate theme
+            <div class="is-flex is-column has-text-centered">
+            <h1 class="title is-size-1 mb-5 has-text-white" data-aos="fade" data-aos-duration="1200" data-aos-easing="ease-in-back" data-aos-delay="0">
+              {{ .Params.hero_heading }}
             </h1>
-            <h2 class="subtitle is-size-2">
-                By Supersonic
+            <h2 class="subtitle is-size-2 has-text-white" data-aos="fade" data-aos-duration="1200" data-aos-easing="ease-in-back" data-aos-delay="500">
+                {{ .Params.hero_subheading }}
             </h2>
+            <div class="">
+            <a href="#" class="button is-primary is-large" data-aos="fade" data-aos-duration="1200" data-aos-easing="ease-in-back" data-aos-delay="1000">Our Services</a>
+        </div>
         </div>
       </div>
-  
-    </div>
-  
+      </div>
 </header>
+
 <section class="section is-medium">
-    <div class="container">
-        <h2 class="is-size-2">
-            Welcome
+    <div class="container has-text-centered">
+        
+        <h2 class="is-size-2 mb-3">
+            {{ .Params.section1_heading }}
         </h2>
+
         <p class="block">
-            This is a block text
+            {{ .Params.section1_text }}
+        </p>
+        
+        <div data-aos="fade-up"
+        data-aos-duration="500">
+   
+        <div class="columns is-5 my-5 py-5">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+
+                      <div class="content">
+                          <h3 class="is-size-3">Lorem Ipsum</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                      </div>
+
+                      <a href="#" class="button is-primary">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                  
+                      <div class="content">
+                        <h3 class="is-size-3">Lorem Ipsum</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                      </div>
+
+                      <a href="#" class="button is-primary">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                  
+                      <div class="content">
+                        <h3 class="is-size-3">Lorem Ipsum</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                      </div>
+
+                      <a href="#" class="button is-primary">Learn More</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="section is-medium has-background-primary has-text-white">
+    <div class="container">
+    <div class="section2_intro pb-5 mb-5 has-text-centered">
+    <h2 class="is-size-2">Lorem Ipsum</h2>
+    <p class="block pb-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus nec iaculis mauris.</p>
+    </div>
+
+    <div class="columns is-8">
+
+        <div class="column">
+            <div class="has-shadow w-100 is-flex is-column is-aligned-center">
+                <figure class="image is-128x128 negative-margin-sm">
+                    <img src="https://via.placeholder.com/150" alt="Alt Text" class="is-rounded shadow">
+                    
+                </figure>
+                <figure class="image">
+                <div style="width:128px;"><img src="{{ .Site.BaseURL }}img/fivestars.png" class="mt-2" alt="Picture of the 5 star review for website development services"></div>
+                </figure>
+                <h4 class="is-size-4 pt-2">Person 1</h4>
+                <p class="block font-sm has-text-centered p-5">
+                    Testimonial Text<br></br>
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="has-shadow w-100 is-flex is-column is-aligned-center">
+            
+            <figure class="image is-128x128 negative-margin-sm">
+                <img src="https://via.placeholder.com/150" alt="Alt Text" class="is-rounded shadow">
+                
+            </figure>
+            <figure class="image">
+            <div style="width:128px;"><img src="{{ .Site.BaseURL }}img/fivestars.png" class="mt-2" alt="Picture of the 5 star review for website development services"></div>
+            </figure>
+            <h4 class="is-size-4 pt-2">Person 2</h4>
+            <p class="block font-sm has-text-centered p-5">
+                Testimonial Text<br></br>
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="column">
+        <div class="has-shadow w-100 is-flex is-column is-aligned-center">
+        
+        <figure class="image is-128x128 negative-margin-sm">
+            <img src="https://via.placeholder.com/150" alt="Alt Text" class="is-rounded shadow">
+            
+        </figure>
+        <figure class="image">
+        <div style="width:128px;"><img src="{{ .Site.BaseURL }}img/fivestars.png" class="mt-2" alt="Picture of the 5 star review for website development services"></div>
+        </figure>
+        <h4 class="is-size-4 pt-2">Person 3</h4>
+        <p class="block font-sm has-text-centered p-5">
+            Testimonial Text<br></br>
         </p>
     </div>
+    
+</div>
+
+    </div>
+
+    <div class="section2_intro pt-5 mt-5 has-text-centered">
+        <h2 class="is-size-2">Lorem Ipsum</h2>
+        <p class="block pb-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris.</p>
+        </div>
+</div>
 </section>
 {{ end }}
